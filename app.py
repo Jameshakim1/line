@@ -301,10 +301,10 @@ def handle_message(event):
         return 0
     elif "/smuleaudio: " in event.message.text:
         skss = event.message.text.replace('/smuleaudio: ', '')
-        url = requests.get("https://api.eater.pw/smule?url="+ skss)
+        url = requests.get("https://api.fckveza.com/getsmule?link={}&apikey=albiansBots".format(str(skss)))
         data = url.json()
         message = AudioSendMessage(
-        original_content_url=data["result"][0]["video"],
+        original_content_url=str(data["result"]["url"]),
         duration=60000
         )
         line_bot_api.reply_message(event.reply_token, message)
