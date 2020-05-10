@@ -55,8 +55,8 @@ def callback():
 def handle_join(event):
     line_bot_api.reply_message(
         event.reply_token,[
-                TextSendMessage(text='Makasih Udah Invite Saya, ini adalah Owner dari akun Ini'),
-                TextSendMessage(text='http://line.me/ti/p/~jameshakim1')
+                TextSendMessage(text='Makasih Udah Invite Saya'),
+                TextSendMessage(text='https://jamsblogaddress.blogspot.com/?m=1')
         ])
     
 @handler.add(MessageEvent, message=TextMessage)
@@ -94,14 +94,14 @@ def handle_message(event):
             line_bot_api.reply_message(
                 event.reply_token, [
                     TextSendMessage(text='Aku pamit ya, bye bye'),
-                    TextSendMessage(text='http://line.me/ti/p/~jameshakim1')
+                    TextSendMessage(text='https://jamsblogaddress.blogspot.com/?m=1')
                 ])
             line_bot_api.leave_group(event.source.group_id)
         elif isinstance(event.source, SourceRoom):
             line_bot_api.reply_message(
                 event.reply_token, [
                     TextSendMessage(text='aku pergi bye-bye'),
-                    TextSendMessage(text='http://line.me/ti/p/~jameshakim1')
+                    TextSendMessage(text='https://jamsblogaddress.blogspot.com/?m=1')
                 ])
             line_bot_api.leave_room(event.source.room_id)
         else:
@@ -832,7 +832,7 @@ def handle_message(event):
                         actions=[
                             URITemplateAction(
                                 label='>Jams<',
-                                uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f'
+                                uri='https://jamsblogaddress.blogspot.com/?m=1'
                             )
                         ]
                     ),
@@ -842,7 +842,7 @@ def handle_message(event):
                         actions=[
                             URITemplateAction(
                                 label='>Jams<',
-                                uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f'
+                                uri='https://jamsblogaddress.blogspot.com/?m=1'
                             )
                         ]
                     ),
@@ -852,7 +852,7 @@ def handle_message(event):
                         actions=[
                             URITemplateAction(
                                 label='>Jams<',
-                                uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f'
+                                uri='https://jamsblogaddress.blogspot.com/?m=1'
                             )
                         ]
                     ),
@@ -897,7 +897,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/21831487/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -911,7 +911,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/37652126/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -925,7 +925,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/7111997/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -939,7 +939,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/11221543/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -953,7 +953,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/18423382/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -967,7 +967,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/34558069/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -981,7 +981,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/9756022/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -995,7 +995,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/8683557/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1009,7 +1009,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12860202/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1023,7 +1023,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200512/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1037,7 +1037,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/18282481/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1051,7 +1051,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24186953/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1065,7 +1065,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/22499899/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1079,7 +1079,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691708/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1093,7 +1093,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200499/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1107,7 +1107,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24464008/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1121,7 +1121,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24186952/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1135,7 +1135,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/34751035/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1149,7 +1149,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/11825345/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1163,7 +1163,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/22482252/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1177,7 +1177,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/16365505/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1191,7 +1191,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24862265/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1205,7 +1205,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/34558071/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1219,7 +1219,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691714/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1233,7 +1233,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691705/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1247,7 +1247,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89547155/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1261,7 +1261,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200507/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1275,7 +1275,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691709/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1289,7 +1289,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12521487/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1303,7 +1303,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/7670129/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1317,7 +1317,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24464015/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1331,7 +1331,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/17530681/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1345,7 +1345,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/22220762/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1359,7 +1359,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12842266/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1373,7 +1373,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/78960399/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1387,7 +1387,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12842265/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1401,7 +1401,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/55737941/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1415,7 +1415,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12842261/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1430,7 +1430,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/18282476/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1444,7 +1444,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/20217667/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1458,7 +1458,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89547168/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1472,7 +1472,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200497/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1486,7 +1486,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/20217665/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1500,7 +1500,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/19002665/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1513,7 +1513,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/17241274/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1527,7 +1527,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200506/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1541,7 +1541,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/26538903/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1555,7 +1555,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200515/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1569,7 +1569,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12521475/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1583,7 +1583,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200512/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1597,7 +1597,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/14038588/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1611,7 +1611,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24186956/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1625,7 +1625,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/15666186/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1639,7 +1639,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89547152/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1653,7 +1653,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691717/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1667,7 +1667,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24200511/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1681,7 +1681,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89547171/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1695,7 +1695,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/11866860/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1709,7 +1709,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89691710/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1723,7 +1723,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/24186955/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1737,7 +1737,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/89547158/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1751,7 +1751,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/23581910/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1765,7 +1765,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/16135443/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1778,7 +1778,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/16135442/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1791,7 +1791,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/15664374/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1804,7 +1804,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/51626494/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1817,7 +1817,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/1072597/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1830,7 +1830,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/15671736/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1843,7 +1843,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/15708876/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1856,7 +1856,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/12690693/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1869,7 +1869,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/49279761/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1882,7 +1882,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/73760360/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1895,7 +1895,7 @@ def handle_message(event):
               columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/52002735/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1908,7 +1908,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/19599278/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1921,7 +1921,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/153453/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1934,7 +1934,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/13162615/IOS/sticker.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1947,7 +1947,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/8683557/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1960,7 +1960,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/8683546/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1973,7 +1973,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/52002738/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1986,7 +1986,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/22499899/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -1999,7 +1999,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/27695296/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2012,7 +2012,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/52002763/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2025,7 +2025,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/51626520/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2038,7 +2038,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/34751035/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2051,7 +2051,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/51626499/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2064,7 +2064,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/51626500/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2077,7 +2077,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/40381622/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
@@ -2090,7 +2090,7 @@ def handle_message(event):
                 columns=[
                     ImageCarouselColumn(
                         image_url='https://stickershop.line-scdn.net/stickershop/v1/sticker/52114135/IOS/sticker_animation@2x.png',
-                        action=URIAction(uri='line://nv/profilePopup/mid=uc66a26f635ba47a1e95174652660585f')
+                        action=URIAction(uri='https://jamsblogaddress.blogspot.com/?m=1')
                     )
                 ]
             )
