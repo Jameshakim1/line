@@ -71,24 +71,7 @@ def handle_message(event):
     
 #=====[ LEAVE GROUP OR ROOM ]==========[ ARSYBAI ]======================
     
-    if event.message.text == "!me" or event.message.text == "me" or event.message.text == "Me":
-        profile = line_bot_api.get_profile(event.source.user_id)
-        buttons_template = TemplateSendMessage(
-            alt_text="Profile Status",
-            template=ButtonsTemplate(
-                title="" + profile.display_name,
-                text="Download photo profile klik dibawah ini",
-                thumbnail_image_url="" + profile.picture_url,
-                actions=[
-                    URITemplateAction(
-                        label="DOWNLOAD PHOTO",
-                        uri="" + profile.picture_url,
-                    )
-                ]
-            )
-        )
-        line_bot_api.reply_message(event.reply_token, buttons_template)
-        return 0
+    
     if text == '.pamit.':
         if isinstance(event.source, SourceGroup):
             line_bot_api.reply_message(
@@ -545,7 +528,7 @@ def handle_message(event):
                 actions=[
                     MessageTemplateAction(
                         label='My Creator',
-                        text='/creator'
+                        text='Me'
                     ),
                     MessageTemplateAction(
                         label='Media',
@@ -598,16 +581,12 @@ def handle_message(event):
                 align= 'center',
                 actions=[
                     MessageTemplateAction(
-                        label='Youtube',
-                        text='≽ Use:\n• /youtubemp3:<link>\n• /youtubemp4:<link>'
-                    ),
-                    MessageTemplateAction(
                         label='Download Smule',
                         text='≽ Use:\n• /smuleaudio:<Link>\n• /smulevideo:<Link>'
                     ),
                     MessageTemplateAction(
                         label='Translate',
-                        text='≽ Use:\n• /tr-id:<text>\n• /tr-en:<text>\n• /tr-th:<text>'
+                        text='≽ Use:\n• /jawa<text>'
                     ),
                     MessageTemplateAction(
                         label='Info Bmkg',
@@ -674,101 +653,7 @@ def handle_message(event):
         )
         
         line_bot_api.reply_message(event.reply_token, buttons_template)
-    elif text == 'StrukturOwnerFJS':
-        bubble = BubbleContainer(
-            direction='ltr',
-            hero=ImageComponent(
-                url='https://lh3.googleusercontent.com/-fdANmMKC_mI/W7aWCaVspwI/AAAAAAAAA_I/_rwMZ4cfWaIra7BpStMpJfjlkicwO_aTQCJoC/w795-h692-n-rw/697672.jpg',
-                size='full',
-                aspect_ratio='20:13',
-                aspect_mode='cover',
-                action=URIAction(uri='https://lh3.googleusercontent.com/-fdANmMKC_mI/W7aWCaVspwI/AAAAAAAAA_I/_rwMZ4cfWaIra7BpStMpJfjlkicwO_aTQCJoC/w795-h692-n-rw/697672.jpg', label='label')
-            ),
-            body=BoxComponent(
-                layout='vertical',
-                contents=[
-                    # title
-                    TextComponent(text='Kris', weight='bold', size='xl'),
-                    # review
-                    BoxComponent(
-                        layout='baseline',
-                        margin='md',
-                        contents=[
-                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
-                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
-                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
-                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
-                            IconComponent(size='sm', url='https://www.thespaatlittleriver.com/wp-content/uploads/2013/07/gold-star.jpg'),
-                            TextComponent(text='FJS', size='sm', color='#999999', margin='md',
-                                          flex=0)
-                        ]
-                    ),
-                    # info
-                    BoxComponent(
-                        layout='vertical',
-                        margin='lg',
-                        spacing='sm',
-                        contents=[
-                            BoxComponent(
-                                layout='baseline',
-                                spacing='sm',
-                                contents=[
-                                    TextComponent(
-                                        text='Name',
-                                        color='#aaaaaa',
-                                        size='sm',
-                                        flex=1
-                                    ),
-                                    TextComponent(
-                                        text='Kris',
-                                        wrap=True,
-                                        color='#666666',
-                                        size='sm',
-                                        flex=5
-                                    )
-                                ],
-                            ),
-                            BoxComponent(
-                                layout='baseline',
-                                spacing='sm',
-                                contents=[
-                                    TextComponent(
-                                        text='Job',
-                                        color='#aaaaaa',
-                                        size='sm',
-                                        flex=1
-                                    ),
-                                    TextComponent(
-                                        text="Owner FJS",
-                                        wrap=True,
-                                        color='#666666',
-                                        size='sm',
-                                        flex=5,
-                                    ),
-                                ],
-                            ),
-                        ],
-                    )
-                ],
-            ),
-            footer=BoxComponent(
-                layout='vertical',
-                spacing='sm',
-                contents=[
-                    # separator
-                    SeparatorComponent(),
-                    # websiteAction
-                    ButtonComponent(
-                        style='link',
-                        height='sm',
-                        action=URIAction(label='Contact Kris', uri="https://line.me/ti/p/~krissthea")
-                    )
-                ]
-            ),
-        )
-        message = FlexSendMessage(alt_text="Kontak Owner", contents=bubble)
-        line_bot_api.reply_message(event.reply_token, message)
-        
+    
     elif text == '/listtoken':
         message = TemplateSendMessage(
             alt_text='Token area',
@@ -821,34 +706,24 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, message)
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
-    elif (text == '/creator') or (text == 'About'):
+    elif (text == 'Me') or (text == 'Me'):
         message = TemplateSendMessage(
             alt_text='>My creator<',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        title='Creator-PC',
-                        text='This is my creator',
+                        title='YOUTUBE',
+                        text='subcribe',
                         actions=[
                             URITemplateAction(
                                 label='>Jams<',
-                                uri='https://jamsblogaddress.blogspot.com/?m=1'
-                            )
-                        ]
-                    ),
-                    CarouselColumn(
-                        title='Creator-OA',
-                        text='This is my creator',
-                        actions=[
-                            URITemplateAction(
-                                label='>Jams<',
-                                uri='https://jamsblogaddress.blogspot.com/?m=1'
+                                uri='https://m.youtube.com/channel/UCQF7nT6GQK65ObrNjozoeuw'
                             )
                         ]
                     ),
                     CarouselColumn(
                         title='My web',
-                        text='Hehe',
+                        text=' Blog',
                         actions=[
                             URITemplateAction(
                                 label='>Jams<',
