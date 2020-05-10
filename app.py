@@ -291,11 +291,11 @@ def handle_message(event):
         return 0
     elif "/smulevideo: " in event.message.text:
         skss = event.message.text.replace('/smulevideo: ', '')
-        url = requests.get("https://api.eater.pw/smule?url="+ skss)
+        url = requests.get("https://api.fckveza.com/getsmule?link={}&apikey=albiansBots".format(str(skss)))
         data = url.json()
         message = VideoSendMessage(
-        original_content_url=data["result"][0]["video"],
-        preview_image_url=data["result"][0]["thumb"]
+        original_content_url=str(data["result"]["url"]),
+        duration=60000
         )
         line_bot_api.reply_message(event.reply_token, message)
         return 0
