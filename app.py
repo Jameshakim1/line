@@ -203,11 +203,11 @@ def handle_message(event):
         text_message = TextSendMessage(text=data["Hasil"])
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
-    elif "/tr-id: " in event.message.text:
-        skss = event.message.text.replace('/tr-id: ', '')
-        url = requests.get("https://api.tanyz.xyz/translateText/?&to=id&text="+ skss)
+    elif "/jawa " in event.message.text:
+        skss = event.message.text.replace('/jawa ', '')
+        url = requests.get("http://ariapi.herokuapp.com/api/trans?key=beta&to=jw&text={}".format(skss))
         data = url.json()
-        text_message = TextSendMessage(text=data["Hasil"])
+        text_message = TextSendMessage("{}".format(data["result"]["translated"]))
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
         
