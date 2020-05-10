@@ -295,7 +295,7 @@ def handle_message(event):
         data = url.json()
         message = VideoSendMessage(
         original_content_url=str(data["result"]["url"]),
-        preview_image_url='https://i.ibb.co/GFWPRCV/1545946474474.jpg'
+        preview_image_url='https://1.bp.blogspot.com/-rLstVoMN8qY/XdtesOntwfI/AAAAAAAAAmI/NBtbsV91_6EL0j4cbO-WD-ZmciZ4CGETwCLcBGAsYHQ/s1600/20191118_203237.jpg'
         )
         line_bot_api.reply_message(event.reply_token, message)
         return 0
