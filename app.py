@@ -352,7 +352,18 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, message)
         return 0
-
+    elif "Corona" in event.message.text or (text == 'corona'):
+        r=requests.get("https://api.kawalcorona.com/indonesia")
+        data=r.text
+        data=json.loads(data)
+        ret_ = "「 COVID-19」"
+        ret_ += "\nNegara : {}".format(str(data[0]["name"]))
+        ret_ += "\nPositif : {}".format(str(data[0]["positif"]))
+        ret_ += "\nSembuh : {}".format(str(data[0]["sembuh"]))
+        ret_ += "\nMeninggal : {}".format(str(data[0]["meninggal"]))
+        text_message = TextSendMessage(text=ret_)
+        line_bot_api.reply_message(event.reply_token, text_message)
+        return 0
     elif "/apakah " in event.message.text:
         quo = ('Iya','Tidak','Gak tau','Bisa jadi','Mungkin iya','Mungkin tidak')
         jwb = random.choice(quo)
