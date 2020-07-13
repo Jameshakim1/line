@@ -2,7 +2,6 @@ import errno
 import os
 import sys
 import tempfile
-import subprocess
 
 from flask import Flask, request, abort
 
@@ -292,18 +291,6 @@ def handle_message(event):
         duration=60000
         )
         line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "youtube.com" in event.message.text or "youtu.be" in event.message.text:
-        skss = event.message.text.replace("youtu.be/","youtube.com/watch?v=")
-        subprocess.getoutput('youtube-dl --format mp4 --output video.mp4 {}'.format(skss))
-        vids = "video.mp4"
-        time.sleep(2)
-        message = VideoSendMessage(
-        original_content_url=vids,
-        preview_image_url='https://1.bp.blogspot.com/-rLstVoMN8qY/XdtesOntwfI/AAAAAAAAAmI/NBtbsV91_6EL0j4cbO-WD-ZmciZ4CGETwCLcBGAsYHQ/s1600/20191118_203237.jpg'
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        os.remove("video.mp4")
         return 0
     elif "/music: " in event.message.text:
         skss = event.message.text.replace('/music: ', '')
