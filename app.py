@@ -295,7 +295,7 @@ def handle_message(event):
         return 0
     elif "youtube.com" in event.message.text or "youtu.be" in event.message.text:
         skss = event.message.text.replace("youtu.be/","youtube.com/watch?v=")
-        url = requests.get('youtube-dl --format mp4 --output video.mp4 {}'.format(skss))
+        subprocess.getoutput('youtube-dl --format mp4 --output video.mp4 {}'.format(skss))
         vids = "video.mp4"
         time.sleep(2)
         message = VideoSendMessage(
